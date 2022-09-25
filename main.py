@@ -6,6 +6,8 @@ import re
 csv_file = open('university_rankings.csv', 'w')
 writer = csv.writer(csv_file)
 url = 'https://www.usnews.com/best-colleges/rankings/national-universities'
+writer.writerow(['Rank', 'Name', 'Overview', 'School Type', 'Year Founded', 'Religious Affiliation', 'Academic Calendar',
+                'Setting', 'Phone', 'Website'])
 
 headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.76 Safari/537.36',
